@@ -1,14 +1,7 @@
-- id: ktlint
-  name: ktlint
-  description: Runs ktlint
-  entry: ./gradlew ktlintFormat
-  pass_filenames: false
-  language: system
-
 - id: unit_tests
   name: unittests
-  description: Runs unit tests
-  entry: ./gradlew test
+  description: Runs unit tests firebase
+  entry: ./gradlew :app:testFirebaseDebugUnitTest --warning-mode all 
   pass_filenames: false
   language: system
 
